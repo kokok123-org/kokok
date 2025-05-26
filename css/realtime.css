@@ -1,0 +1,51 @@
+.realtime__frame {
+    cursor: pointer;
+    position: absolute;
+    width: 208px;
+    height: 90px;
+    bottom: 150.34px;
+    left: 312px;
+    transform: rotate(-14.98deg);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    background: black;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.realtime__img {
+    width: 46.2234px;
+    height: 46.2234px;
+    transform: rotate(-7.98deg);
+    margin-left: 4px;
+}
+
+.realtime__img2 {
+    position: absolute;
+    width: 13.6015px;
+    top: 10px;
+    right: 15px;
+}
+
+.realtime__detail-text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.realtime__detail-coinprice {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2FBC5B;
+}

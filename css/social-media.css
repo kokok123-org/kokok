@@ -1,0 +1,50 @@
+.hero__social {
+    max-width: 1920px;
+    height: 114px;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+.social__text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 114px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    white-space: nowrap;
+    display: inline-block;
+    user-select: none;
+}
+
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    will-change: transform;
+}
+
+.marquee>p {
+    display: inline-block;
+    margin: 0 9.4rem;
+    user-select: none;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

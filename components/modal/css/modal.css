@@ -1,0 +1,113 @@
+.modal__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.modal__frame {
+    position: relative;
+    width: 944px;
+    height: 390px;
+    border-radius: 16px;
+    background: #333333;
+    z-index: 60;
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 48px;
+    text-align: center;
+}
+
+/* section project */
+.modal__body-project {
+    display: flex;
+    flex-direction: row;
+    padding-top: 66px;
+    gap: 99px;
+    margin: auto;
+    justify-content: center;
+}
+
+.project__frame {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.project__img {
+    width: 114px;
+    height: 114px;
+}
+
+.project__text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+
+}
+
+/* section open game */
+.opgame__img {
+    width: 184.98904418945312px;
+    height: 184.98904418945312px;
+
+}
+
+.modal__body-ogame {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ogame__text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* section generator */
+.modal__body-gener {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gener__text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}

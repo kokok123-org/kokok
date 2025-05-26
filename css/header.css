@@ -1,0 +1,734 @@
+.hero__header {
+    position: relative;
+    max-width: 1920px;
+    height: 1080px;
+    background: url("../assets/images/background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+
+.header__sound {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 10px;
+    z-index: 20;
+}
+
+.header__coin1 {
+    position: absolute;
+    top: 40px;
+    right: 63%;
+    width: 70px;
+    height: 70px;
+    transform: rotate(63.5deg);
+    background: url("../assets/images/coin2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    animation: coin1Move 3s ease-in-out forwards;
+}
+
+.header__coin2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 25%;
+    right: 61%;
+    transform: rotate(20deg);
+    background: url("../assets/images/coin2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    animation: coin2Move 3s ease-in-out forwards;
+}
+
+@keyframes coin2Move {
+    0% {
+        right: 68%;
+        opacity: 0;
+    }
+
+    100% {
+        right: 61%;
+        opacity: 1;
+    }
+}
+
+
+
+.header__coin3 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 16%;
+    right: 40%;
+    transform: translate(-50%, -50%);
+    background: url("../assets/images/coin2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    animation: coin3Move 3s ease-in-out forwards;
+
+}
+
+@keyframes coin1Move {
+    0% {
+        top: -6%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 4%;
+        opacity: 1;
+    }
+}
+
+@keyframes coin3Move {
+    0% {
+        right: 34%;
+        opacity: 0;
+    }
+
+    100% {
+        right: 40%;
+        opacity: 1;
+    }
+}
+
+.header__gian {
+    width: 2.5%;
+    transform: rotate(40deg);
+    top: 43%;
+    right: 87%;
+    position: absolute;
+    animation: gianMove 5s ease-in-out forwards infinite;
+
+}
+
+@keyframes gianMove {
+    0% {
+        right: 86%;
+        opacity: 1;
+        z-index: 20;
+    }
+
+    100% {
+        right: 79%;
+        opacity: 0;
+        z-index: 5;
+    }
+}
+
+.header__gian2 {
+    width: 3%;
+    transform: rotate(340deg);
+    top: 80%;
+    right: 90%;
+    position: absolute;
+    background: url("../assets/images/gian.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: gian2Move 5s ease-in-out forwards infinite;
+
+}
+
+@keyframes gian2Move {
+    0% {
+        top: 80%;
+        opacity: 1;
+        z-index: 20;
+    }
+
+    100% {
+        top: 77%;
+        opacity: 0;
+        z-index: 5;
+    }
+}
+
+
+.header__gian3 {
+    width: 3%;
+    transform: rotate(377deg);
+    top: 33%;
+    right: 28.5%;
+    position: absolute;
+    animation: gian3Move 3.5s ease-in-out forwards infinite;
+    z-index: 20;
+}
+
+@keyframes gian3Move {
+    0% {
+        transform: rotate(377deg);
+        right: 28.5%;
+        top: 33%;
+        opacity: 1;
+        z-index: 20;
+    }
+
+    10% {
+        transform: rotate(387deg);
+        right: 28.25%;
+        top: 33.7%;
+        opacity: 1;
+    }
+
+    20% {
+        transform: rotate(397deg);
+        right: 28%;
+        top: 34.4%;
+        opacity: 1;
+    }
+
+    30% {
+        transform: rotate(407deg);
+        right: 27.75%;
+        top: 35.1%;
+        opacity: 1;
+    }
+
+    40% {
+        transform: rotate(417deg);
+        right: 27.5%;
+        top: 35.8%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(427deg);
+        right: 27.25%;
+        top: 36.5%;
+        opacity: 1;
+    }
+
+    60% {
+        transform: rotate(437deg);
+        right: 27%;
+        top: 37.2%;
+        opacity: 0.8;
+    }
+
+    70% {
+        transform: rotate(447deg);
+        right: 26.75%;
+        top: 37.9%;
+        opacity: 0.6;
+    }
+
+    80% {
+        transform: rotate(457deg);
+        right: 26.5%;
+        top: 38.6%;
+        opacity: 0.4;
+    }
+
+    90% {
+        transform: rotate(467deg);
+        right: 26.25%;
+        top: 39.3%;
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: rotate(474deg);
+        right: 26%;
+        top: 40%;
+        opacity: 0;
+        z-index: 5;
+    }
+}
+
+.header__gian4 {
+    width: 3%;
+    transform: rotate(260deg);
+    top: 95%;
+    right: 0%;
+    position: absolute;
+    animation: gian4Move 5.5s ease-in-out forwards infinite;
+    z-index: 20;
+}
+
+@keyframes gian4Move {
+    0% {
+        top: 95%;
+        right: 0%;
+        opacity: 1;
+        z-index: 20;
+    }
+
+    50% {
+        top: 72.5%;
+
+        right: 25%;
+
+        opacity: 0;
+    }
+
+    100% {
+        top: 50%;
+        right: 50%;
+        opacity: 0;
+        z-index: 5;
+    }
+}
+
+.header__cockcroach {
+    position: absolute;
+    width: 900px;
+    height: 693px;
+    bottom: 0px;
+    right: 134px;
+    background: url("../assets/images/cockcroach2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    transition: opacity 0.3s ease;
+
+}
+
+.header__cockcroach.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header__cockcroach-animation {
+    width: 1060px;
+    height: 1000px;
+    top: 231px;
+    right: 53px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    position: absolute;
+    z-index: 20;
+}
+
+.header__cockcroach-animation.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.header__smoke {
+    position: absolute;
+    width: 20%;
+    bottom: 90px;
+    right: 507px;
+    z-index: 30;
+}
+
+
+.header__focus-table {
+    cursor: pointer;
+    width: 246px;
+    height: 344.5px;
+    top: 125.5px;
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+.header__focus-table__frame {
+    display: none;
+    position: absolute;
+    width: 354px;
+    height: 410px;
+    top: -13.5px;
+    left: -36px;
+    background: url("../assets/images/vector-5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__focus-table__img {
+    position: absolute;
+
+}
+
+.header__focus-table__button {
+    display: none;
+    position: absolute;
+    width: 190.9219522535779px;
+    height: 67.48423038070045px;
+    top: 15.52px;
+    left: 204px;
+    transform: rotate(-6.15deg);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-width: 2px;
+    background: #854725;
+    border: 2px solid #31190D;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+
+
+.header__focus-table:hover .header__focus-table__frame {
+    display: block;
+}
+
+.header__focus-table:hover .header__focus-table__button {
+    display: flex;
+}
+
+.header__focus-pc1 {
+    cursor: pointer;
+    position: absolute;
+    width: 234.5px;
+    height: 423.5px;
+    top: 238.5px;
+    left: 441px;
+    background: url("../assets/images/frame1.png");
+    background-size: contain;
+    z-index: 30;
+    overflow: visible;
+}
+
+.header__focus-pc1__frame-wrap {
+
+    filter: drop-shadow(0 0 20px #F5CC59);
+
+}
+
+.header__focus-pc1__frame {
+    display: none;
+    position: absolute;
+    width: 320px;
+    height: 486.672px;
+    top: -27.5px;
+    left: -38px;
+    transform: rotate(0.78deg);
+    background: url("../assets/images/vector-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.header__focus-pc1:hover .header__focus-icon {
+    display: none;
+}
+
+.header__focus-pc1:hover .header__focus-pc1__frame {
+    display: block;
+}
+
+
+.header__focus-pc1:hover .header__focus-pc1__button {
+    display: flex;
+
+}
+
+
+.header__focus-pc1__button {
+    display: none;
+    position: absolute;
+    width: 203px;
+    height: 83px;
+    left: 93px;
+    bottom: 382px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    background: #854725;
+    border: 2px solid #31190D;
+    border-width: 2px;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+}
+
+.header__focus-pc2 {
+    cursor: pointer;
+    position: absolute;
+    width: 370.0148620605469px;
+    height: 229.36996459960938px;
+    top: 383px;
+    left: 685.99px;
+    background: url("../assets/images/frame1.png");
+    background-size: contain;
+    z-index: 30;
+    overflow: visible;
+}
+
+.header__focus-pc2__frame {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    width: 470px;
+    height: 294px;
+    top: -31.5px;
+    left: -45px;
+    transform: rotate(.78deg);
+    background: url("../assets/images/vector-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.header__focus-pc2__text {
+    position: absolute;
+    display: none;
+    transform: rotate(-9.82deg);
+    z-index: 40;
+    left: 10.1px;
+    bottom: 62.58px;
+}
+
+.header__focus-pc2__button {
+    position: absolute;
+    display: none;
+    width: 114.00000445730734px;
+    height: 46.5000018181122px;
+    bottom: 5.36px;
+    left: 145.16px;
+    transform: rotate(-11.18deg);
+    border-width: 1.5px;
+    border-radius: 18px;
+    background: #854725;
+    border: 1.5px solid #31190D;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+}
+
+.header__focus-pc2:hover .header__focus-pc2__text,
+.header__focus-pc2:hover .header__focus-pc2__frame {
+    display: block;
+}
+
+.header__focus-pc2:hover .header__focus-icon {
+    display: none;
+}
+
+.header__focus-pc2:hover .header__focus-pc2__button {
+    display: flex;
+}
+
+.header__focus-phone {
+    cursor: pointer;
+    position: absolute;
+    width: 144.554px;
+    height: 140.103px;
+    top: 493.42px;
+    left: 1214.45px;
+    background: url("../assets/images/frame1.png");
+    background-size: contain;
+    z-index: 30;
+
+}
+
+.header__focus-phone__frame {
+    display: none;
+    position: absolute;
+    width: 276px;
+    height: 207px;
+    top: -30.5px;
+    left: -62px;
+    transform: rotate(.78deg);
+    background: url(../assets/images/vector-3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.header__focus-phone__button {
+    position: absolute;
+    display: none;
+    width: 203px;
+    height: 83px;
+    bottom: 104.52px;
+    left: 112.55px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-width: 2px;
+    background: #854725;
+    border: 2px solid #31190D;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+
+.header__focus-phone:hover .header__focus-phone__frame {
+    display: block;
+}
+
+.header__focus-phone:hover .header__focus-phone__button {
+    display: flex;
+}
+
+.header__focus-phone:hover .header__focus-icon-2 {
+    display: none;
+}
+
+.header__focus-table2 {
+    cursor: pointer;
+
+    position: absolute;
+    width: 375.5px;
+    height: 366.5px;
+    top: 26px;
+    left: 1381px;
+    background: url("../assets/images/frame1.png");
+    background-size: contain;
+    z-index: 10;
+}
+
+.header__focus-table2__frame {
+    display: none;
+    position: absolute;
+    width: 440px;
+    height: 433px;
+    top: -27.5px;
+    left: -29px;
+    background: url("../assets/images/vector-4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.header__focus-table2__button {
+    cursor: pointer;
+
+    display: none;
+    position: absolute;
+    width: 203px;
+    height: 83px;
+    top: 97px;
+    right: 539px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-width: 2px;
+    background: #854725;
+    border: 2px solid #31190D;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__focus-table2__mask-1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: 50px;
+    border-radius: 20px;
+    background: url("../assets/images/sticker1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+
+    transition: transform 0.3s ease;
+}
+
+.header__focus-table2__mask-1:hover,
+.header__focus-table2__mask-2:hover,
+.header__focus-table2__mask-3:hover,
+.header__focus-table2__mask-4:hover {
+    transform: scale(1.1);
+}
+
+.header__focus-table2__mask-2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 132px;
+    top: 50px;
+    background: url("../assets/images/sticker4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    transition: transform 0.3s ease;
+
+}
+
+.header__focus-table2__mask-3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 241px;
+    top: 50px;
+    background: url("../assets/images/sticker3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    transition: transform 0.3s ease;
+
+}
+
+.header__focus-table2__mask-4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 150px;
+    top: 162px;
+    background: url("../assets/images/sticker2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    transition: transform 0.3s ease;
+
+}
+
+.header__focus-table2:hover .header__focus-table2__frame {
+    display: block;
+}
+
+.header__focus-table2:hover+.header__focus-table2__button {
+    display: flex;
+}
+
+.header__focus-table2:hover .header__focus-icon-2 {
+    display: none;
+}
+
+
+
+.header__focus-icon {
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 13px;
+    background: url("../assets/images/icons/focus.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 20;
+}
+
+.header__focus-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
